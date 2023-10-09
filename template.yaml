@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An example Lambda function
+
+Resources:
+  AcceptifyReviewProcessingFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.lambda_handler
+      Architectures:
+        - arm64
+      Runtime: python3.11
+      CodeUri: ./src/
