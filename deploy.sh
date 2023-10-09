@@ -16,5 +16,5 @@ cd ..
 
 # Deploy the Lambda function
 aws lambda update-function-code \
-    --function-name MySQSFunction \
+    --function-name AcceptifyReviewProcessingFunction \
     --zip-file fileb://lambda_function.zip
