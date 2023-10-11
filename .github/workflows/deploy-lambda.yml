@@ -3,7 +3,9 @@ name: Deploy Lambda
 on:
   push:
     branches:
-      - develop
+    - develop
+    paths:
+    - 'src/**'
 
 jobs:
   deploy:
